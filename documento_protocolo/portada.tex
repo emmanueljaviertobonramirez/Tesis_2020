@@ -1,0 +1,77 @@
+%\includepdf[pages=-]{portada.pdf}
+
+%\layout
+
+%% ----------------------------------------------------------
+
+\begin{titlepage}
+
+\noindent
+%\hspace{0cm}						% Ajustar centrado
+\setlength{\unitlength}{1pt}
+\begin{picture}(\x,\y)(0,0)
+
+%% Lineas guia, hay que comentarlas al terminar
+	% Margenes
+%	\linethickness{2mm}
+%	\put(0,0){\line(1,0){\x}}
+%	\put(0,0){\line(0,1){\y}}
+%	\put(\x,\y){\line(0,-1){\y}}
+%	\put(\x,\y){\line(-1,0){\x}}
+%
+%	% Cuadricula
+%	\linethickness{0.3mm}
+%	\multiput(0, 0)(0,\cuadro){30}{\line(1, 0){\x}}		
+%	\multiput(0, 0)(\cuadro, 0){20}{\line(0, 1){\y}}
+%	
+%	% Linea central de guia
+%	\linethickness{1.5mm}
+%	\setlength{\unitlength}{\cuadro pt}
+%	\put(12,0){\line(0,1){30}}				
+	
+%% Logos				
+	\setlength{\unitlength}{\cuadro pt}				% Unidad de un cuadro
+	\put(0,25){\includegraphics[width= \fpeval{\cuadro *5}pt ]{logo_buap.eps}}	
+	\put(0.7,2.8){\includegraphics[width= \fpeval{\cuadro *3.8}pt]{logo_fce.eps}}
+	
+%% Formula para centrar
+% 5 + [ 7 - (Cant de cuadros de palabra)/2 ]
+% Ejemplo: Facultad de Ciencias la Electrónica 		ocupa 9.5 cuadros
+% 			5 + [ 7 - 4.75] = 7.25
+	
+%% Texto de Universidad, Facultad y nombre de Tesis
+	\put(4.9,29){\begin{large}\textsc{Benemérita Universidad Autónoma de Puebla}\end{large}}
+	\put(6.2,27){\begin{large}\textsc{Facultad de Ciencias la Electrónica}\end{large}}
+	\put(9.6,25){\begin{large}\textsc{Título de tesis}\end{large}}
+	\put(7,23){\begin{large}\textsc{Antenas flexibles multibanda}\end{large}}
+%	\put(5.2,22.1){\begin{large}\textsc{usando hardware analógico reprogramable}\end{large}}
+%	\put(5.8,21.2){\begin{large}\textsc{y su aplicación en un oscilador caótico}\end{large}}
+	
+%% Letras TESIS
+	\put(6.9,18){\begin{Huge}
+	\textsc{T} \hspace{\cuadro pt} 
+	\textsc{E} \hspace{\cuadro pt} 
+	\textsc{S} \hspace{\cuadro pt} 
+	\textsc{I} \hspace{\cuadro pt} 
+	\textsc{S}
+	\end{Huge}}
+	
+%% Carrera, Nombre, Asesores, Lugar y fecha
+	\put(7.15,16.5){\begin{large}\textsc{que para obtener el título de:}\end{large}}
+	\put(9,15.5){\begin{large}\textsc{Lic. en Electrónica}\end{large}}
+	\put(10.5,14.5){\begin{large}\textsc{presenta:}\end{large}}
+	\put(6.95,13.5){\begin{large}\textsc{Emmanuel Javier Tobón Ramírez}\end{large}}
+	\put(10.6,10){\begin{large}\textsc{Asesores:}\end{large}}
+	\put(6.7,9){\begin{large}\textsc{Dr. Richard  Torrealba Melendez}\end{large}}
+	\put(8.7,7){\begin{large}\textsc{Puebla, Puebla, 2020}\end{large}}
+	
+%% Lineas decorativas
+	\linethickness{0.7mm}
+	\put(5,28.5){\line(1,0){14}}			% Horizontal grande
+	\put(2.5,9.5){\line(0,1){15}}			% Vertical grande
+	\linethickness{0.3mm}
+	\put(5,28.2){\line(1,0){14}}			% Horizontal
+	\put(2.8,9.5){\line(0,1){15}}			% Vertical pequeña der
+	\put(2.2,9.5){\line(0,1){15}}			% Vertical pequeña izq
+\end{picture}
+\end{titlepage}
